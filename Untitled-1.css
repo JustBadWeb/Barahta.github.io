@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Supercell-Magic";
+    src: url("Supercell-magic-webfont.x-font-ttf") format("truetype"); 
+    font-style: normal;
+    font-weight: normal;
+}
+* {
+    scroll-behavior: smooth;
+    font-family: "Supercell-Magic";
+}
+h1{
+    margin: 60px auto;
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    margin: 40px auto;
+    text-align: center;
+    font-size: 30px;
+}
+.cord{
+    margin: auto;
+    text-align: center;
+    width:120px;
+}
+.cord:focus{    
+    pointer-events: none;
+}
+.cord:focus + .gallery{
+    opacity: 1;    
+    margin: 20px auto;
+    position: static;
+}
+p b{
+    font-size: 20px;
+}
+body{
+    margin: 0;
+    background-image: url("back.png");
+}
+header{
+    margin: 10px auto;
+}
+nav{
+    margin: auto;
+    background-color: #2777a5;
+    width: 80%;
+    border-radius: 10px;
+}
+.navig{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.theme_1{
+    margin: 20px 4%;
+    width: 92%;
+    border-radius: 7%;
+}
+.block_1{
+    margin: 20px auto;
+    width: 98%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gallery{
+    width: 98%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity:0;    
+    margin-top: -6500px;
+    z-index: -1;
+    position: absolute;
+}
+.gallery img{
+    opacity: 0;
+    margin: auto;
+    width: 600px;
+    height: 450px;
+    border-radius: 10%;
+    transition-duration: 2s;
+}
+.text{
+    padding: 10px;
+    width: 50%;
+}
+.split{    
+    border-radius: 7%;
+    padding: 5px 0;
+}
+.img_1{
+    border-radius: 5%;
+    width: 45%;
+}
+a{
+    font-size: 22px;
+    color:rgb(28, 28, 158)
+}
+a:hover{
+    color:rgb(77, 20, 100);
+}
+.img_2{
+    width:100px;
+    border-radius: 10%;
+    margin: auto;
+}
+.img_2:hover{
+    animation: anim_1 1s infinite;
+}
+.arena{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.arena_img{
+    margin: auto;
+    width: 600px;
+    height: 450px;
+    background-size: cover;
+    border-radius: 10%;
+    background-image: url("back.png");
+    background-repeat: no-repeat;
+    border: black 3px solid;
+}
+.arena_img:hover img{
+    opacity:1;
+}
+.feet{
+    color: cornsilk;
+}
+footer{
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@keyframes anim_1{
+    0%{
+        width:100px;
+        height: 100px;
+    }
+    50%{
+        padding-top: 30px;
+        width: 120px;
+        height: 70px;
+    }
+    100%{
+        width:100px;
+        height: 100px;
+    }
+}
