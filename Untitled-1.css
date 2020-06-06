@@ -567,11 +567,12 @@ article img{
     }
     .arena_img{
         width: 90%;
-        height: 250px;
+        height: 280px;
+        object-fit: cover;
     }
     .gallery img{
-        width: 90%;
-        height: 250px;
+        width: 100%;
+        height: 100%;
     }
     .navig{
         flex-direction: column;
