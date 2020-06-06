@@ -573,12 +573,10 @@ article img{
     .gallery img{
         width: 100%;
         height: 100%;
+        opacity:1;
     }
     .navig{
         flex-direction: column;
-    }
-    .gallery img{
-        opacity:1;
     }
     /*flipper*/
     .flip-container{
